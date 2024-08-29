@@ -19,7 +19,7 @@
 &kp TAB     &kp A      &kp S     &kp D      &kp F      &kp G        &kp END                             &kp PAGE_DOWN  &kp H      &kp J      &kp K      &kp L      &kp SEMICOLON  &kp APOSTROPHE
 &kp ESC     &kp Z      &kp X     &kp C      &kp V      &kp B                                                           &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH       &kp BSPC
                        &tog NUM  &kp P                                                                                                   &kp LBKT   &kp RBKT
-                                                       &kp ENTER    &kp SPACE   &kp RCTRL       &tog FN  &kp CAPS   &kp RCTRL
+                                                       &kp ENTER    &kp SPACE   &kp LCTRL       &tog FN  &kp CAPS   &kp RCTRL
                                                        &kp LWIN     &kp LSHIFT  &kp LALT        &kp DEL &kp RSHIFT  &kp RWIN
             >;
         };
