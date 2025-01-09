@@ -8,6 +8,7 @@
 #define NUM 2
 
 
+
 / {
     keymap {
         compatible = "zmk,keymap";
