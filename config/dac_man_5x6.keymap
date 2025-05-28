@@ -37,7 +37,7 @@
 
         combo_test{
             key-positions = <0 1>;
-            bindings = <&kp a>;
+            bindings = <&kp A>;
         };
 
     };
