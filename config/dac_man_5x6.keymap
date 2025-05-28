@@ -27,12 +27,19 @@
     };
     combos{
         compatible = "zmk,combos";
+
         combo_ue {
             timeout-ms = <100>;
             key-positions = <62 23>;
             bindings = <&hyprland_unicode_sequence>,
                         <&unicode_ue>;
         };
+
+        combo_test{
+            key-positions = <0 1>;
+            bindings = <&kp a>;
+        };
+
     };
 
     keymap {
