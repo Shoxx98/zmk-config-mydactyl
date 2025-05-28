@@ -22,7 +22,8 @@
         )
 
         ZMK_MACRO(hyprland_unicode_sequence,
-        bindings =  <&kp RALT &kp LSHIFT &kp U>;
+        bindings =  <&macro_press &kp RALT &kp LSHIFT &kp U>,
+                    <&macro_release &kp RALT &kp LSHIFT &kp U>;
         )
     };
     combos{
@@ -31,8 +32,8 @@
         combo_ue {
             timeout-ms = <100>;
             key-positions = <63 23>;
-            bindings = <&hyprland_unicode_sequence>,
-                        <&unicode_ue>;
+            bindings =  <&hyprland_unicode_sequence>
+                        , <&unicode_ue>;
         };
 
         // combo_test{
