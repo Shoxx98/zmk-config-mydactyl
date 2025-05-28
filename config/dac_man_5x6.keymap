@@ -8,17 +8,23 @@
 #define NUM 2
 #define SYSCTRL 3
 
-ZMK_MACRO(hyprland_unicode_sequence,
-    bindings =  <&kp RCTRL &kp LSHIFT &kp U>;)
 
 // ZMK_MACRO(unicode_ae,
 //     bindings = <&kp E &kp N4>)
 
-ZMK_MACRO(unicode_ue,
-    bindings = <&kp F &kp C>)
 
 / {
 
+    macros{
+
+        ZMK_MACRO(unicode_ue,
+            bindings = <&kp F &kp C>;
+        )
+
+        ZMK_MACRO(hyprland_unicode_sequence,
+        bindings =  <&kp RCTRL &kp LSHIFT &kp U>;
+        )
+    };
     combos{
         compatible = "zmk,combos";
         combo_ue {
