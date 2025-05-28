@@ -22,7 +22,7 @@
         )
 
         ZMK_MACRO(hyprland_unicode_sequence,
-        bindings =  <&kp RCTRL &kp LSHIFT &kp U>;
+        bindings =  <&kp RALT &kp LSHIFT &kp U>;
         )
     };
     combos{
