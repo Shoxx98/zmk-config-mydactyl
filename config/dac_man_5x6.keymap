@@ -28,7 +28,8 @@
 
         ZMK_MACRO(linux_ue,
             bindings = <&linux_unicode_enter >,
-                       <&unicode_ue>;
+                       <&unicode_ue>,
+                       <&kp ENTER>;
         )
 
     };
