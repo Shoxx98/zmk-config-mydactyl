@@ -17,14 +17,20 @@
 
     macros{
 
-        ZMK_MACRO(unicode_ue,
-            bindings = <&kp F &kp C>;
-        )
-
         ZMK_MACRO(linux_unicode_enter,
         bindings =  <&macro_press &kp LCTRL &kp LSHIFT &kp U>,
                     <&macro_release &kp LCTRL &kp LSHIFT &kp U>;
         )
+
+        ZMK_MACRO(unicode_ue,
+            bindings = <&kp F &kp C>;
+        )
+
+        ZMK_MACRO(linux_ue,
+            bindings = <&linux_unicode_enter >,
+                       <&unicode_ue>;
+        )
+
     };
     combos{
         compatible = "zmk,combos";
@@ -32,8 +38,7 @@
         combo_ue {
             timeout-ms = <100>;
             key-positions = <63 23>;
-            bindings =  <&linux_unicode_enter>,
-                        <&kp F &kp C>;
+            bindings =  <&linux_ue>;
         };
 
         // combo_test{
