@@ -37,6 +37,8 @@
 
         combo_ue {
             timeout-ms = <100>;
+            wait-ms = <10>;
+            tap-ms = <10>;
             key-positions = <63 23>;
             bindings =  <&linux_ue>;
         };
