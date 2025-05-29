@@ -26,7 +26,7 @@
             bindings = <&kp F &kp C &kp ENTER>;
         )
 
-        ZMK_MACRO(unicode_UE,
+        ZMK_MACRO(unicode_UE_shift,
             bindings = <&kp D &kp C &kp ENTER>;
         )
 
@@ -34,7 +34,7 @@
             bindings = <&kp E &kp N4 &kp ENTER>;
         )
 
-        ZMK_MACRO(unicode_AE,
+        ZMK_MACRO(unicode_AE_shift,
             bindings = <&kp C &kp N4 &kp ENTER>;
         )
 
@@ -42,7 +42,7 @@
             bindings = <&kp F &kp N6 &kp ENTER>;
         )
 
-        ZMK_MACRO(unicode_OE,
+        ZMK_MACRO(unicode_OE_shift,
             bindings = <&kp D &kp N6 &kp ENTER>;
         )
 
@@ -67,25 +67,25 @@
                        <&unicode_ae>;
         )
 
-        ZMK_MACRO(linux_UE,
+        ZMK_MACRO(linux_UE_shift,
             wait-ms = <10>;
             tap-ms = <10>;
             bindings = <&linux_unicode_enter >,
-                       <&unicode_UE>;
+                       <&unicode_UE_shift>;
         )
 
-        ZMK_MACRO(linux_OE,
+        ZMK_MACRO(linux_OE_shift,
             wait-ms = <10>;
             tap-ms = <10>;
             bindings = <&linux_unicode_enter >,
-                       <&unicode_OE>;
+                       <&unicode_OE_shift>;
         )
 
-        ZMK_MACRO(linux_AE,
+        ZMK_MACRO(linux_AE_shift,
             wait-ms = <10>;
             tap-ms = <10>;
             bindings = <&linux_unicode_enter >,
-                       <&unicode_AE>;
+                       <&unicode_AE_shift>;
         )
 
     };
@@ -108,20 +108,20 @@
             bindings =  <&linux_oe>;
         };
 
-        combo_UE {
+        combo_UE_shift {
             timeout-ms = <100>;
             key-positions = <63 23 65>;
-            bindings =  <&linux_UE>;
+            bindings =  <&linux_UE_shift>;
         };
-        combo_AE {
+        combo_AE_shift {
             timeout-ms = <100>;
             key-positions = <63 29 65>;
-            bindings =  <&linux_AE>;
+            bindings =  <&linux_AE_shift>;
         };
-        combo_OE {
+        combo_OE_shift {
             timeout-ms = <100>;
             key-positions = <63 25 65>;
-            bindings =  <&linux_OE>;
+            bindings =  <&linux_OE_shift>;
         };
 
     };
