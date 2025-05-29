@@ -32,7 +32,8 @@
         combo_ue {
             timeout-ms = <100>;
             key-positions = <63 23>;
-            bindings =  <&linux_unicode_enter &unicode_ue>;
+            bindings =  <&linux_unicode_enter>,
+                        <&kp F &kp C>;
         };
 
         // combo_test{
