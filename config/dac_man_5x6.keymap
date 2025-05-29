@@ -25,23 +25,19 @@
         ZMK_MACRO(unicode_ue,
             bindings = <&kp F &kp C &kp ENTER>;
         )
-
-        ZMK_MACRO(unicode_UE_shift,
-            bindings = <&kp D &kp C &kp ENTER>;
-        )
-
         ZMK_MACRO(unicode_ae,
-            bindings = <&kp E &kp N4 &kp ENTER>;
+        bindings = <&kp E &kp N4 &kp ENTER>;
         )
-
-        ZMK_MACRO(unicode_AE_shift,
-            bindings = <&kp C &kp N4 &kp ENTER>;
-        )
-
         ZMK_MACRO(unicode_oe,
             bindings = <&kp F &kp N6 &kp ENTER>;
         )
 
+        ZMK_MACRO(unicode_UE_shift,
+        bindings = <&kp D &kp C &kp ENTER>;
+        )
+        ZMK_MACRO(unicode_AE_shift,
+        bindings = <&kp C &kp N4 &kp ENTER>;
+        )
         ZMK_MACRO(unicode_OE_shift,
             bindings = <&kp D &kp N6 &kp ENTER>;
         )
@@ -52,19 +48,17 @@
             bindings = <&linux_unicode_enter >,
                        <&unicode_ue>;
         )
-
+        ZMK_MACRO(linux_ae,
+        wait-ms = <10>;
+        tap-ms = <10>;
+        bindings = <&linux_unicode_enter >,
+            <&unicode_ae>;
+        )
         ZMK_MACRO(linux_oe,
             wait-ms = <10>;
             tap-ms = <10>;
             bindings = <&linux_unicode_enter >,
                        <&unicode_oe>;
-        )
-
-        ZMK_MACRO(linux_ae,
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings = <&linux_unicode_enter >,
-                       <&unicode_ae>;
         )
 
         ZMK_MACRO(linux_UE_shift,
@@ -73,19 +67,17 @@
             bindings = <&linux_unicode_enter >,
                        <&unicode_UE_shift>;
         )
-
+        ZMK_MACRO(linux_AE_shift,
+        wait-ms = <10>;
+        tap-ms = <10>;
+        bindings = <&linux_unicode_enter >,
+            <&unicode_AE_shift>;
+        )
         ZMK_MACRO(linux_OE_shift,
             wait-ms = <10>;
             tap-ms = <10>;
             bindings = <&linux_unicode_enter >,
                        <&unicode_OE_shift>;
-        )
-
-        ZMK_MACRO(linux_AE_shift,
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings = <&linux_unicode_enter >,
-                       <&unicode_AE_shift>;
         )
 
     };
