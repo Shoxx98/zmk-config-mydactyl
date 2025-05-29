@@ -26,11 +26,66 @@
             bindings = <&kp F &kp C &kp ENTER>;
         )
 
+        ZMK_MACRO(unicode_UE,
+            bindings = <&kp D &kp C &kp ENTER>;
+        )
+
+        ZMK_MACRO(unicode_ae,
+            bindings = <&kp E &kp N4 &kp ENTER>;
+        )
+
+        ZMK_MACRO(unicode_AE,
+            bindings = <&kp C &kp N4 &kp ENTER>;
+        )
+
+        ZMK_MACRO(unicode_oe,
+            bindings = <&kp F &kp N6 &kp ENTER>;
+        )
+
+        ZMK_MACRO(unicode_OE,
+            bindings = <&kp D &kp N6 &kp ENTER>;
+        )
+
         ZMK_MACRO(linux_ue,
             wait-ms = <10>;
             tap-ms = <10>;
             bindings = <&linux_unicode_enter >,
                        <&unicode_ue>;
+        )
+
+        ZMK_MACRO(linux_oe,
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&linux_unicode_enter >,
+                       <&unicode_oe>;
+        )
+
+        ZMK_MACRO(linux_ae,
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&linux_unicode_enter >,
+                       <&unicode_ae>;
+        )
+
+        ZMK_MACRO(linux_UE,
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&linux_unicode_enter >,
+                       <&unicode_UE>;
+        )
+
+        ZMK_MACRO(linux_OE,
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&linux_unicode_enter >,
+                       <&unicode_OE>;
+        )
+
+        ZMK_MACRO(linux_AE,
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&linux_unicode_enter >,
+                       <&unicode_AE>;
         )
 
     };
@@ -42,12 +97,32 @@
             key-positions = <63 23>;
             bindings =  <&linux_ue>;
         };
+        combo_ae {
+            timeout-ms = <100>;
+            key-positions = <63 29>;
+            bindings =  <&linux_ae>;
+        };
+        combo_oe {
+            timeout-ms = <100>;
+            key-positions = <63 25>;
+            bindings =  <&linux_oe>;
+        };
 
-        // combo_test{
-        //     timeout-ms = <100>;
-        //     key-positions = <0 1>;
-        //     bindings = <&kp A>;
-        // };
+        combo_UE {
+            timeout-ms = <100>;
+            key-positions = <63 23 65>;
+            bindings =  <&linux_UE>;
+        };
+        combo_AE {
+            timeout-ms = <100>;
+            key-positions = <63 29 65>;
+            bindings =  <&linux_AE>;
+        };
+        combo_OE {
+            timeout-ms = <100>;
+            key-positions = <63 25 65>;
+            bindings =  <&linux_OE>;
+        };
 
     };
 
