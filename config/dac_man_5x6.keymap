@@ -23,13 +23,12 @@
         )
 
         ZMK_MACRO(unicode_ue,
-            bindings = <&kp F &kp C>;
+            bindings = <&kp F &kp C &kp ENTER>;
         )
 
         ZMK_MACRO(linux_ue,
             bindings = <&linux_unicode_enter >,
-                       <&unicode_ue>,
-                       <&kp ENTER>;
+                       <&unicode_ue>;
         )
 
     };
