@@ -18,19 +18,17 @@
     macros{
 
         ZMK_MACRO(linux_unicode_enter,
-            wait-ms = <10>;
-            tap-ms = <10>;
         bindings =  <&macro_press &kp LCTRL &kp LSHIFT &kp U>,
                     <&macro_release &kp LCTRL &kp LSHIFT &kp U>;
         )
 
         ZMK_MACRO(unicode_ue,
-            wait-ms = <10>;
-            tap-ms = <10>;
             bindings = <&kp F &kp C &kp ENTER>;
         )
 
         ZMK_MACRO(linux_ue,
+            wait-ms = <10>;
+            tap-ms = <10>;
             bindings = <&linux_unicode_enter >,
                        <&unicode_ue>;
         )
