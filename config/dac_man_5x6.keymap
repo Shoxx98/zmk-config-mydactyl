@@ -41,11 +41,25 @@
         ZMK_MACRO(unicode_OE_shift,
             bindings = <&kp D &kp N6 &kp ENTER>;
         )
+
         ZMK_MACRO(unicode_sz,
             bindings = <&kp D &kp F &kp ENTER;
         )
+        ZMK_MACRO(linux_sz,
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&linux_unicode_enter >,
+                       <&unicode_sz>;
+        )
+
         ZMK_MACRO(unicode_SZ_shift,
             bindings = <&kp N1 &kp E &kp N9 &kp E &kp ENTER;
+        )
+        ZMK_MACRO(linux_SZ_shift,
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&linux_unicode_enter >,
+                       <&unicode_SZ_shift>;
         )
 
         ZMK_MACRO(linux_ue,
@@ -84,18 +98,6 @@
             bindings = <&linux_unicode_enter >,
                        <&unicode_OE_shift>;
         )
-        ZMK_MACRO(linux_SZ_shift,
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings = <&linux_unicode_enter >,
-                       <&unicode_SZ_shift>;
-        )
-        ZMK_MACRO(linux_sz,
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings = <&linux_unicode_enter >,
-                       <&unicode_sz>;
-        )
 
     };
     combos{
@@ -110,6 +112,11 @@
             timeout-ms = <100>;
             key-positions = <63 29>;
             bindings =  <&linux_ae>;
+        };
+        combo_ae {
+            timeout-ms = <100>;
+            key-positions = <63 30>;
+            bindings =  <&linux_sz>;
         };
         combo_oe {
             timeout-ms = <100>;
@@ -132,7 +139,11 @@
             key-positions = <63 25 65>;
             bindings =  <&linux_OE_shift>;
         };
-
+        combo_AE_shift {
+            timeout-ms = <100>;
+            key-positions = <63 30 65>;
+            bindings =  <&linux_AE_shift>;
+        };
     };
 
     keymap {
