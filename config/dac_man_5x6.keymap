@@ -63,6 +63,12 @@
             bindings = <&linux_unicode_enter >,
                        <&unicode_oe>;
         )
+        ZMK_MACRO(linux_sz,
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&linux_unicode_enter >,
+                       <&unicode_sz>;
+        )
 
         ZMK_MACRO(linux_UE_shift,
             wait-ms = <10>;
@@ -102,6 +108,11 @@
             key-positions = <63 25>;
             bindings =  <&linux_oe>;
         };
+        combo_sz {
+            timeout-ms = <100>;
+            key-positions = <63 30>;
+            bindings = <&linux_sz>;
+        }
 
         combo_UE_shift {
             timeout-ms = <100>;
