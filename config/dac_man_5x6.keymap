@@ -113,7 +113,7 @@
             key-positions = <63 29>;
             bindings =  <&linux_ae>;
         };
-        combo_ae {
+        combo_sz {
             timeout-ms = <100>;
             key-positions = <63 30>;
             bindings =  <&linux_sz>;
@@ -139,7 +139,7 @@
             key-positions = <63 25 65>;
             bindings =  <&linux_OE_shift>;
         };
-        combo_AE_shift {
+        combo_SZ_shift {
             timeout-ms = <100>;
             key-positions = <63 30 65>;
             bindings =  <&linux_AE_shift>;
