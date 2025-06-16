@@ -112,7 +112,7 @@
             timeout-ms = <100>;
             key-positions = <63 30>;
             bindings = <&linux_sz>;
-        }
+        };
 
         combo_UE_shift {
             timeout-ms = <100>;
