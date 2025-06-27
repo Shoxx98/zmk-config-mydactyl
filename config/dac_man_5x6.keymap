@@ -9,6 +9,26 @@
 #define SYSCTRL 3
 
 
+#define INDEX_RCTRL 63
+#define INDEX_LSHIFT 65
+
+// QWERTY ///////////////
+
+// #define INDEX_U 23
+// #define INDEX_O 25
+// #define INDEX_S 31
+// #define INDEX_A 29
+
+// QWERTY ///////////////
+
+// COLEMAK-DH ///////////
+#define INDEX_U 24
+#define INDEX_O 40
+#define INDEX_S 31
+#define INDEX_A 29
+// COLEMAK-DH ///////////
+
+
 // ZMK_MACRO(unicode_ae,
 //     bindings = <&kp E &kp N4>)
 
@@ -106,43 +126,43 @@
 
         combo_ue {
             timeout-ms = <100>;
-            key-positions = <63 23>;
+            key-positions = <INDEX_RCTRL INDEX_U>;
             bindings =  <&linux_ue>;
         };
         combo_ae {
             timeout-ms = <100>;
-            key-positions = <63 29>;
+            key-positions = <INDEX_RCTRL INDEX_A>;
             bindings =  <&linux_ae>;
         };
         combo_sz {
             timeout-ms = <100>;
-            key-positions = <63 30>;
+            key-positions = <INDEX_RCTRL INDEX_S>;
             bindings =  <&linux_sz>;
         };
         combo_oe {
             timeout-ms = <100>;
-            key-positions = <63 25>;
+            key-positions = <INDEX_RCTRL INDEX_O>;
             bindings =  <&linux_oe>;
         };
 
         combo_UE_shift {
             timeout-ms = <100>;
-            key-positions = <63 23 65>;
+            key-positions = <INDEX_RCTRL INDEX_U INDEX_LSHIFT>;
             bindings =  <&linux_UE_shift>;
         };
         combo_AE_shift {
             timeout-ms = <100>;
-            key-positions = <63 29 65>;
+            key-positions = <INDEX_RCTRL INDEX_A INDEX_LSHIFT>;
             bindings =  <&linux_AE_shift>;
         };
         combo_OE_shift {
             timeout-ms = <100>;
-            key-positions = <63 25 65>;
+            key-positions = <INDEX_RCTRL INDEX_O INDEX_LSHIFT>;
             bindings =  <&linux_OE_shift>;
         };
         combo_SZ_shift {
             timeout-ms = <100>;
-            key-positions = <63 30 65>;
+            key-positions = <INDEX_RCTRL INDEX_O INDEX_LSHIFT>;
             bindings =  <&linux_SZ_shift>;
         };
     };
