@@ -7,6 +7,7 @@
 #define FN 1
 #define NUM 2
 #define SYSCTRL 3
+#define COLEMAK_ARROWS 4
 
 
 #define INDEX_RCTRL 63
@@ -167,6 +168,17 @@
         };
     };
 
+    behaviors {
+        lt: layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&kp>;
+            display-name = "Layer-Tap";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -192,7 +204,7 @@
 &kp TAB     &kp A      &kp R     &kp S      &kp T      &kp G        &kp END                             &kp PAGE_DOWN   &kp M      &kp N      &kp E      &kp I      &kp O          &kp APOSTROPHE
 &kp ESC     &kp Z      &kp X     &kp C      &kp D      &kp V                                                            &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH       &kp BSPC
                        &tog NUM  &kp P                                                                                                        &kp LBKT   &kp RBKT
-                                            &kp ENTER  &kp SPACE    &kp LCTRL                           &tog FN         &kp CAPS   &kp RCTRL
+                                            &lt COLEMAK_ARROWS ENTER  &kp SPACE    &kp LCTRL                           &tog FN         &kp CAPS   &kp RCTRL
                                             &kp LWIN   &kp LSHIFT   &kp LALT                            &kp DEL         &kp RSHIFT &kp RWIN
             >;
         };
@@ -233,6 +245,19 @@
                                         &trans  &trans  &trans      &trans  &trans  &trans
             >;
         };
+
+        colemak-arrows{
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans      &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans      &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &kp LEFT &kp DOWN   &kp UP  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans      &trans  &trans  &trans  &trans
+                        &trans  &trans                                                      &trans      &trans
+                                        &trans  &trans  &trans      &trans  &trans  &trans
+                                        &trans  &trans  &trans      &trans  &trans  &trans
+            >;
+        };
+
 
 //         FN{
 //             bindings = <
