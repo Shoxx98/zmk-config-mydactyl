@@ -196,16 +196,30 @@
 //         };
 // // QWERTY //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// COLEMAK-DH //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// // COLEMAK-DH //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//         default_layer {
+//             bindings = <
+// &kp GRAVE   &kp N2     &kp N3    &kp N4     &kp N5     &kp N6       &kp HOME                            &kp PAGE_UP     &kp N7     &kp N8     &kp N9     &kp N0     &kp MINUS      &kp EQUAL
+// &kp N1      &kp Q      &kp W     &kp F      &kp P      &kp B        &kp INSERT                          &kp PSCRN       &kp J      &kp L      &kp U      &kp Y      &kp SEMICOLON  &kp BSLH
+// &kp TAB     &kp A      &kp R     &kp S      &kp T      &kp G        &kp END                             &kp PAGE_DOWN   &kp M      &kp N      &kp E      &kp I      &kp O          &kp APOSTROPHE
+// &kp ESC     &kp Z      &kp X     &kp C      &kp D      &kp V                                                            &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH       &kp BSPC
+//                        &tog NUM  &kp P                                                                                                        &kp LBKT   &kp RBKT
+//                                             &lt COLEMAK_ARROWS ENTER  &kp SPACE    &kp LCTRL                           &tog FN         &kp CAPS   &kp RCTRL
+//                                             &kp LWIN   &kp LSHIFT   &kp LALT                            &kp DEL         &kp RSHIFT &kp RWIN
+//             >;
+//         };
+// // COLEMAK-DH //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// carpalx: outputs-everythin_colemakstart //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         default_layer {
             bindings = <
-&kp GRAVE   &kp N2     &kp N3    &kp N4     &kp N5     &kp N6       &kp HOME                            &kp PAGE_UP     &kp N7     &kp N8     &kp N9     &kp N0     &kp MINUS      &kp EQUAL
-&kp N1      &kp Q      &kp W     &kp F      &kp P      &kp B        &kp INSERT                          &kp PSCRN       &kp J      &kp L      &kp U      &kp Y      &kp SEMICOLON  &kp BSLH
-&kp TAB     &kp A      &kp R     &kp S      &kp T      &kp G        &kp END                             &kp PAGE_DOWN   &kp M      &kp N      &kp E      &kp I      &kp O          &kp APOSTROPHE
-&kp ESC     &kp Z      &kp X     &kp C      &kp D      &kp V                                                            &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH       &kp BSPC
-                       &tog NUM  &kp P                                                                                                        &kp LBKT   &kp RBKT
-                                            &lt COLEMAK_ARROWS ENTER  &kp SPACE    &kp LCTRL                           &tog FN         &kp CAPS   &kp RCTRL
-                                            &kp LWIN   &kp LSHIFT   &kp LALT                            &kp DEL         &kp RSHIFT &kp RWIN
+&kp N2  &kp N3      &kp N4      &kp GRAVE   &kp FSLH                    &kp N5  &kp HOME                &kp PAGE_UP     &kp N6      &kp COMMA   &kp SEMICOLON   &kp N7      &kp N8      &kp N9
+&kp N1  &kp LBKT    &kp Q       &kp P       &kp L                       &kp M   &kp INSERT              &kp PSCRN       &kp U       &kp B       &kp O           &kp V       &kp RBKT    &kp N0
+&kp TAB &kp D       &kp S       &kp T       &kp R                       &kp N   &kp END                 &kp PAGE_DOWN   &kp A       &kp I       &kp E           &kp C       &kp F       &kp H    
+&kp ESC &kp MINUS   &kp J       &kp G       &kp K                       &kp Z                                           &kp W       &kp X       &kp Y           &kp EQUAL   &kp BSLH    &kp BSPC
+                    &tog NUM    &kp P                                                                                                           &kp DOT         &kp APOSTROPHE
+                                            &lt COLEMAK_ARROWS ENTER    &kp SPACE  &kp LCTRL            &tog FN        &kp CAPS    &kp RCTRL
+                                            &kp LWIN                    &kp LSHIFT &kp LALT             &kp DEL        &kp RSHIFT  &kp RWIN
             >;
         };
 // COLEMAK-DH //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
