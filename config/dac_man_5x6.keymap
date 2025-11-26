@@ -652,7 +652,7 @@
         };
         combo_math_brack_l {
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <INDEX_LALT INDEX_Z>;
+            key-positions = <INDEX_LALT INDEX_BRACK_L>;
             bindings =  <&linux_math_brack_l>;
         };
         combo_math_brack_r {
