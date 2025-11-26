@@ -21,7 +21,7 @@
 
 #define TAP_MS 10
 #define WAIT_MS 10
-#define TIMEOUT_MS 200
+#define TIMEOUT_MS 120
 
 // QWERTY ///////////////
 
