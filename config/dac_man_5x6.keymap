@@ -40,9 +40,9 @@
 // // COLEMAK-DH ///////////
 
 // carpalx: outputs-everythin_colemakstart //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-#define INDEX_BRACK_L 14
-#define INDEX_Q 15
-#define INDEX_P 16
+#define INDEX_BRACK_L 15
+#define INDEX_Q 16
+#define INDEX_P 17
 #define INDEX_L 18
 #define INDEX_M 19
 #define INDEX_U 22
@@ -64,16 +64,11 @@
 #define INDEX_J 44
 #define INDEX_G 45
 #define INDEX_K 46
-#define INDEX_W 47
-#define INDEX_X 48
-#define INDEX_Y 49
+#define INDEX_Z 47
+#define INDEX_W 48
+#define INDEX_X 49
+#define INDEX_Y 50
 // carpalx: outputs-everythin_colemakstart //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-// ZMK_MACRO(unicode_ae,
-//     bindings = <&kp E &kp N4>)
-
 
 / {
 
@@ -128,9 +123,9 @@
             bindings = <&kp N3 &kp B &kp A &kp ENTER >;
         )
 
-        // ZMK_MACRO(lambda_c,
-        //     bindings = <&kp N3 &kp N9 &kp B &kp ENTER >;
-        // )
+        ZMK_MACRO(lambda_c,
+            bindings = <&kp N3 &kp N9 &kp B &kp ENTER >;
+        )
 
         ZMK_MACRO(lambda_s,
             bindings = <&kp N3 &kp B &kp B &kp ENTER >;
@@ -362,12 +357,12 @@
                        <&lambda_s>;
         )
 
-        // ZMK_MACRO(linux_lambda_c,
-        //     wait-ms = <WAIT_MS>;
-        //     tap-ms = <TAP_MS>;
-        //     bindings = <&linux_unicode_enter >,
-        //                <&linux_lambda_c>;
-        // )
+        ZMK_MACRO(linux_lambda_c,
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
+            bindings = <&linux_unicode_enter >,
+                       <&linux_lambda_c>;
+        )
 
         ZMK_MACRO(linux_mu_s,
             wait-ms = <WAIT_MS>;
@@ -580,12 +575,12 @@
             bindings =  <&linux_lambda_s>;
         };  
 
-        // // somehow loops the unicode sequence forever
-        // combo_lambda_c {
-        //     timeout-ms = <TIMEOUT_MS>;
-        //     key-positions = <INDEX_LALT INDEX_L INDEX_LSHIFT>;
-        //     bindings =  <&linux_lambda_c>;
-        // };
+        // somehow loops the unicode sequence forever
+        combo_lambda_c {
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <INDEX_LALT INDEX_L INDEX_LSHIFT>;
+            bindings =  <&linux_lambda_c>;
+        };
 
         combo_mu_s {
             timeout-ms = <TIMEOUT_MS>;
@@ -618,22 +613,22 @@
             bindings =  <&linux_tau_s>;
         };
 
-        // // somehow not working
-        // combo_phi_s {
-        //     timeout-ms = <TIMEOUT_MS>;
-        //     key-positions = <INDEX_LALT INDEX_P INDEX_H>;
-        //     bindings =  <&linux_phi_s>;
-        // };
-        // combo_phi_c {
-        //     timeout-ms = <TIMEOUT_MS>;
-        //     key-positions = <INDEX_LALT INDEX_P INDEX_H INDEX_LSHIFT>;
-        //     bindings =  <&linux_phi_c>;
-        // };
-        // combo_psi_s {
-        //     timeout-ms = <TIMEOUT_MS>;
-        //     key-positions = <INDEX_LALT INDEX_P INDEX_S>;
-        //     bindings =  <&linux_psi_s>;
-        // };
+        // somehow not working
+        combo_phi_s {
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <INDEX_LALT INDEX_P INDEX_H>;
+            bindings =  <&linux_phi_s>;
+        };
+        combo_phi_c {
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <INDEX_LALT INDEX_P INDEX_H INDEX_LSHIFT>;
+            bindings =  <&linux_phi_c>;
+        };
+        combo_psi_s {
+            timeout-ms = <TIMEOUT_MS>;
+            key-positions = <INDEX_LALT INDEX_P INDEX_S>;
+            bindings =  <&linux_psi_s>;
+        };
 
         combo_omega_s {
             timeout-ms = <TIMEOUT_MS>;
