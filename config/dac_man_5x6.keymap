@@ -19,6 +19,9 @@
 #define INDEX_LSHIFT 65
 #define INDEX_LALT 66
 
+#define TAP_MS 20
+#define WAIT_MS 20
+
 // QWERTY ///////////////
 
 // #define INDEX_U 23
@@ -85,7 +88,7 @@
         )
 
         ZMK_MACRO(beta_s,
-            bindings = <&kp N3 &kp D &kp N2 &kp ENTER >;
+            bindings = <&kp N3 &kp B &kp N2 &kp ENTER >;
         )
 
         ZMK_MACRO(gamma_s,
@@ -124,9 +127,9 @@
             bindings = <&kp N3 &kp B &kp A &kp ENTER >;
         )
 
-        ZMK_MACRO(lambda_c,
-            bindings = <&kp N3 &kp N9 &kp B &kp ENTER >;
-        )
+        // ZMK_MACRO(lambda_c,
+        //     bindings = <&kp N3 &kp N9 &kp B &kp ENTER >;
+        // )
 
         ZMK_MACRO(lambda_s,
             bindings = <&kp N3 &kp B &kp B &kp ENTER >;
@@ -200,8 +203,8 @@
             bindings = <&kp N2 &kp N2 &kp N0 &kp N0 &kp ENTER >;
         )
         ZMK_MACRO(linux_for_all,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
             <&for_all>;
          )
@@ -230,8 +233,8 @@
             bindings = <&kp D &kp F &kp ENTER>;
         )
         ZMK_MACRO(linux_sz,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&unicode_sz>;
         )
@@ -240,216 +243,218 @@
             bindings = <&kp N1 &kp E &kp N9 &kp E &kp ENTER>;
         )
         ZMK_MACRO(linux_SZ_shift,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&unicode_SZ_shift>;
         )
 
         ZMK_MACRO(linux_ue,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&unicode_ue>;
         )
         ZMK_MACRO(linux_ae,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings =  <&linux_unicode_enter >,
                         <&unicode_ae>;
         )
         ZMK_MACRO(linux_oe,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&unicode_oe>;
         )
 
         ZMK_MACRO(linux_UE_shift,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&unicode_UE_shift>;
         )
         ZMK_MACRO(linux_AE_shift,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings =  <&linux_unicode_enter >,
                         <&unicode_AE_shift>;
         )
         ZMK_MACRO(linux_OE_shift,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&unicode_OE_shift>;
         )
 
         ZMK_MACRO(linux_alpha_s,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&alpha_s>;
         )
 
         ZMK_MACRO(linux_beta_s,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&beta_s>;
         )
         ZMK_MACRO(linux_gamma_s,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&gamma_s>;
         )
         ZMK_MACRO(linux_delta_c,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&delta_c>;
         )
         ZMK_MACRO(linux_epsilon_s,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&epsilon_s>;
         )
         ZMK_MACRO(linux_element_of,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&element_of>;
         )
         ZMK_MACRO(linux_not_element_of,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&not_element_of>;
         )
         ZMK_MACRO(linux_there_exists,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&there_exists>;
         )
         ZMK_MACRO(linux_there_n_exists,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&there_n_exists>;
         )
         ZMK_MACRO(linux_theta_s,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&theta_s>;
         )
         ZMK_MACRO(linux_kappa_s,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&kappa_s>;
         )
         ZMK_MACRO(linux_lambda_s,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&lambda_s>;
         )
-        ZMK_MACRO(linux_lambda_c,
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings = <&linux_unicode_enter >,
-                       <&linux_lambda_c>;
-        )
+
+        // ZMK_MACRO(linux_lambda_c,
+        //     wait-ms = <WAIT_MS>;
+        //     tap-ms = <TAP_MS>;
+        //     bindings = <&linux_unicode_enter >,
+        //                <&linux_lambda_c>;
+        // )
+
         ZMK_MACRO(linux_mu_s,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&mu_s>;
         )
         ZMK_MACRO(linux_nu_s,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&nu_s>;
         )
         ZMK_MACRO(linux_pi_s,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&pi_s>;
         )
         ZMK_MACRO(linux_rho_s,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&rho_s>;
         )
         ZMK_MACRO(linux_sigma_s,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&sigma_s>;
         )
         ZMK_MACRO(linux_tau_s,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&tau_s>;
         )
         ZMK_MACRO(linux_phi_s,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&phi_s>;
         )
         ZMK_MACRO(linux_phi_c,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&phi_c>;
         )
         ZMK_MACRO(linux_psi_s,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&psi_s>;
         )
         ZMK_MACRO(linux_omega_s,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&omega_s>;
         )
         ZMK_MACRO(linux_omega_c,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&omega_c>;
         )
         ZMK_MACRO(linux_logic_and,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&logic_and>;
         )
         ZMK_MACRO(linux_logic_or,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&logic_or>;
         )
         ZMK_MACRO(linux_math_brack_l,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&math_brack_l>;
         )
         ZMK_MACRO(linux_math_brack_r,
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&math_brack_r>;
         )
@@ -507,66 +512,80 @@
             key-positions = <INDEX_LALT INDEX_A>;
             bindings =  <&linux_alpha_s>;
         };
+
         combo_beta_s {
             timeout-ms = <100>;
             key-positions = <INDEX_LALT INDEX_B>;
             bindings =  <&linux_beta_s>;
         };
+
         combo_gamma_s {
             timeout-ms = <100>;
             key-positions = <INDEX_LALT INDEX_G>;
             bindings =  <&linux_gamma_s>;
         };
+
         combo_delta_c {
             timeout-ms = <100>;
             key-positions = <INDEX_LALT INDEX_LSHIFT INDEX_D>;
             bindings =  <&linux_delta_c>;
         };
+
         combo_epsilon_s {
             timeout-ms = <100>;
             key-positions = <INDEX_LALT INDEX_E>;
             bindings =  <&linux_epsilon_s>;
         };
+
         combo_element_of {
             timeout-ms = <100>;
             key-positions = <INDEX_LALT INDEX_E INDEX_L>;
             bindings =  <&linux_element_of>;
         };
+
         combo_not_element_of {
             timeout-ms = <100>;
             key-positions = <INDEX_LALT INDEX_LSHIFT INDEX_E INDEX_L>;
             bindings =  <&linux_not_element_of>;
         };
+
         combo_there_exists {
             timeout-ms = <100>;
-            key-positions = <INDEX_LALT INDEX_E INDEX_X>;
+            key-positions = <INDEX_LALT INDEX_X>;
             bindings =  <&linux_there_exists>;
         };
+
         combo_there_n_exists {
             timeout-ms = <100>;
-            key-positions = <INDEX_LALT INDEX_E INDEX_X INDEX_LSHIFT>;
+            key-positions = <INDEX_LALT INDEX_X INDEX_LSHIFT>;
             bindings =  <&linux_there_n_exists>;
         };
+
         combo_theta_s {
             timeout-ms = <100>;
             key-positions = <INDEX_LALT INDEX_O>;
             bindings =  <&linux_theta_s>;
         };
+
         combo_kappa_s {
             timeout-ms = <100>;
             key-positions = <INDEX_LALT INDEX_K>;
             bindings =  <&linux_kappa_s>;
         };
+
         combo_lambda_s {
             timeout-ms = <100>;
             key-positions = <INDEX_LALT INDEX_L>;
             bindings =  <&linux_lambda_s>;
         };  
-        combo_lambda_c {
-            timeout-ms = <100>;
-            key-positions = <INDEX_LALT INDEX_L INDEX_LSHIFT>;
-            bindings =  <&linux_lambda_c>;
-        };
+
+            // somehow loops the unicode sequence forever
+        // combo_lambda_c {
+        //     timeout-ms = <100>;
+        //     key-positions = <INDEX_LALT INDEX_L INDEX_LSHIFT>;
+        //     bindings =  <&linux_lambda_c>;
+        // };
+
         combo_mu_s {
             timeout-ms = <100>;
             key-positions = <INDEX_LALT INDEX_M>;
@@ -574,10 +593,10 @@
         };
         combo_nu_s {
             timeout-ms = <100>;
-            key-positions = <INDEX_L INDEX_N>;
+            key-positions = <INDEX_LALT INDEX_N>;
             bindings =  <&linux_nu_s>;
         };
-        combo_pi_s {
+        combo_pi_s { //doesn't work
             timeout-ms = <100>;
             key-positions = <INDEX_LALT INDEX_P>;
             bindings =  <&linux_pi_s>;
@@ -589,7 +608,7 @@
         };
         combo_sigma_s {
             timeout-ms = <100>;
-            key-positions = <INDEX_LALT INDEX_I>;
+            key-positions = <INDEX_LALT INDEX_S>;
             bindings =  <&linux_sigma_s>;
         };
         combo_tau_s {
@@ -597,29 +616,32 @@
             key-positions = <INDEX_LALT INDEX_T>;
             bindings =  <&linux_tau_s>;
         };
-        combo_phi_s {
-            timeout-ms = <100>;
-            key-positions = <INDEX_LALT INDEX_P INDEX_H>;
-            bindings =  <&linux_phi_s>;
-        };
-        combo_phi_c {
-            timeout-ms = <100>;
-            key-positions = <INDEX_LALT INDEX_P INDEX_H INDEX_LSHIFT>;
-            bindings =  <&linux_phi_c>;
-        };
-        combo_psi_s {
-            timeout-ms = <100>;
-            key-positions = <INDEX_LALT INDEX_P INDEX_S>;
-            bindings =  <&linux_psi_s>;
-        };
+
+        // somehow not working
+        // combo_phi_s {
+        //     timeout-ms = <100>;
+        //     key-positions = <INDEX_LALT INDEX_P INDEX_H>;
+        //     bindings =  <&linux_phi_s>;
+        // };
+        // combo_phi_c {
+        //     timeout-ms = <100>;
+        //     key-positions = <INDEX_LALT INDEX_P INDEX_H INDEX_LSHIFT>;
+        //     bindings =  <&linux_phi_c>;
+        // };
+        // combo_psi_s {
+        //     timeout-ms = <100>;
+        //     key-positions = <INDEX_LALT INDEX_P INDEX_S>;
+        //     bindings =  <&linux_psi_s>;
+        // };
+
         combo_omega_s {
             timeout-ms = <100>;
-            key-positions = <INDEX_LALT INDEX_O>;
+            key-positions = <INDEX_LALT INDEX_W>;
             bindings =  <&linux_omega_s>;
         };
         combo_omega_c {
             timeout-ms = <100>;
-            key-positions = <INDEX_LALT INDEX_O INDEX_LSHIFT>;
+            key-positions = <INDEX_LALT INDEX_W INDEX_LSHIFT>;
             bindings =  <&linux_omega_c>;
         };
         combo_logic_and {
