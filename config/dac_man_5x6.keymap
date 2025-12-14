@@ -292,7 +292,6 @@
             bindings = <&linux_unicode_enter >,
                        <&alpha_s>;
         )
-
         ZMK_MACRO(linux_beta_s,
             wait-ms = <WAIT_MS>;
             tap-ms = <TAP_MS>;
@@ -359,7 +358,6 @@
             bindings = <&linux_unicode_enter >,
                        <&lambda_s>;
         )
-
         ZMK_MACRO(linux_lambda_c,
             wait-ms = <WAIT_MS>;
             tap-ms = <TAP_MS>;
@@ -396,6 +394,12 @@
             tap-ms = <TAP_MS>;
             bindings = <&linux_unicode_enter >,
                        <&sigma_s>;
+        )
+        ZMK_MACRO(linux_sigma_c,
+            wait-ms = <WAIT_MS>;
+            tap-ms = <TAP_MS>;
+            bindings = <&linux_unicode_enter >,
+                       <&sigma_c>;
         )
         ZMK_MACRO(linux_tau_s,
             wait-ms = <WAIT_MS>;
@@ -754,27 +758,30 @@
 
         math{
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans                                                       &trans  &trans
-                                &trans  &trans  &trans       &trans  &trans  &trans
-                                &trans  &trans  &trans       &trans  &trans  &trans
+&trans  &trans              &trans          &trans          &trans          &trans          &trans                  &trans  &trans              &trans                  &trans                  &trans          &trans              &trans
+&trans  &linux_math_brack_l &linux_pi_s     &trans          &linux_lambda_s &linux_mu_s     &trans                  &trans  &linux_logic_or     &linux_beta_s           &linux_element_of       &linux_phi_s    &linux_math_brack_r &trans
+&trans  &trans              &linux_sigma_s  &linux_tau_s    &linux_rho_s    &linux_nu_s     &trans                  &trans  &linux_alpha_s      &trans                  &linux_epsilon_s        &linux_gamma_s  &trans              &linux_theta_s
+&trans  &trans              &trans          &trans          &linux_kappa_s  &linux_omega_s                                  &trans              &linux_there_exists     &linux_psi_s            &trans          &trans              &trans
+                            &trans          &trans                                                                                                                      &trans                  &trans
+                                                            &trans          &trans          &trans                  &trans  &trans              &trans
+                                                            &trans          &lt MATH_C      &trans                  &trans  &trans              &trans
             >;
         };
 
+
+
         math_c{
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans                                                       &trans  &trans
-                                &trans  &trans  &trans       &trans  &trans  &trans
-                                &trans  &trans  &trans       &trans  &trans  &trans
+&trans  &trans              &trans          &trans          &trans          &trans          &trans                  &trans  &trans              &trans                  &trans                  &trans          &trans              &trans
+&trans  &trans              &trans          &trans          &linux_lambda_c &trans          &trans                  &trans  &linux_logic_and    &trans                  &linux_not_element_of   &linux_phi_c    &trans              &trans
+&trans  &linux_delta_c      &linux_sigma_c  &trans          &trans          &trans          &trans                  &trans  &linux_for_all      &trans                  &trans                  &trans          &trans              &trans
+&trans  &trans              &trans          &trans          &trans          &linux_omega_c                                  &trans              &linux_there_n_exists   &trans                  &trans          &trans              &trans
+                            &trans          &trans                                                                                                                  &trans                  &trans
+                                                            &trans          &trans          &trans                  &trans  &trans              &trans
+                                                            &trans          &lt MATH_C      &trans                  &trans  &trans              &trans
             >;
         };
+
 
         umlaut{
             bindings = <
