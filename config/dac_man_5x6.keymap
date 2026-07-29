@@ -715,7 +715,7 @@
 &kp F1          &trans          &trans      &kp UP          &trans      &trans  &bt BT_SEL 1                                    &bt BT_SEL 4  &trans    &trans    &trans          &trans         &trans  &kp F10
 &trans          &trans          &kp LEFT    &kp DOWN        &kp RIGHT   &trans  &bt BT_SEL 2                                    &trans        &trans    &trans    &trans          &to CAMEL_CASE &trans  &kp F11
 &sl sysctrl     &to SNAKE_CASE  &trans      &trans          &trans      &trans                                                                &trans    &trans    &out OUT_BLE    &out OUT_USB   &trans  &kp F12
-                                &trans      &to PASCAL_CASE                                                                                                       &trans          &trans
+                                &trans      &trans                                                                                                      &trans          &trans
                                                             &trans      &trans  &trans                                          &trans        &trans    &trans
                                                             &trans      &trans  &trans                                          &trans        &trans    &trans
             >;
