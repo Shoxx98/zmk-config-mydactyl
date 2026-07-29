@@ -17,6 +17,8 @@
 #define MATH_C      6
 #define UMLAUT      7
 #define UMLAUT_C    8
+#define CAMEL_CASE  9
+#define SNAKE_CASE  10
 
 #define INDEX_RCTRL 63
 #define INDEX_LSHIFT 65
@@ -696,26 +698,26 @@
 // carpalx: outputs-everythin_colemakstart //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         default_layer {
             bindings = <
-&kp N2  &kp N3      &kp N4      &kp GRAVE   &kp FSLH    &kp N5      &kp HOME                                &kp PAGE_UP     &kp N6      &kp COMMA   &kp SEMICOLON   &kp N7      &kp N8      &kp N9
-&kp N1  &kp LBKT    &kp Q       &kp P       &kp L       &kp M       &lt MATH INSERT                         &lt MATH PSCRN       &kp U       &kp B       &kp O           &kp V       &kp RBKT    &kp N0
-&kp TAB &kp D       &kp S       &kp T       &kp R       &kp N       &lt UMLAUT END                                 &lt UMLAUT PAGE_DOWN   &kp A       &kp I       &kp E           &kp C       &kp F       &kp H    
-&kp ESC &kp MINUS   &kp J       &kp G       &kp K       &kp Z                                                               &kp W       &kp X       &kp Y           &kp EQUAL   &kp BSLH    &kp BSPC
-                    &tog NUM    &lt MOUSE P                                                                                                         &kp DOT         &kp APOSTROPHE
-                                            &kp ENTER   &kp SPACE   &kp LCTRL                               &tog FN         &kp CAPS    &kp RCTRL
-                                            &kp LWIN    &kp LSHIFT  &kp LALT                                &kp DEL         &kp RSHIFT  &kp RWIN
+&kp N2  &kp N3      &kp N4      &kp GRAVE   &kp FSLH    &kp N5      &kp HOME                                &kp PAGE_UP             &kp N6      &kp COMMA   &kp SEMICOLON   &kp N7      &kp N8      &kp N9
+&kp N1  &kp LBKT    &kp Q       &kp P       &kp L       &kp M       &lt MATH INSERT                         &lt MATH PSCRN          &kp U       &kp B       &kp O           &kp V       &kp RBKT    &kp N0
+&kp TAB &kp D       &kp S       &kp T       &kp R       &kp N       &lt UMLAUT END                          &lt UMLAUT PAGE_DOWN    &kp A       &kp I       &kp E           &kp C       &kp F       &kp H    
+&kp ESC &kp MINUS   &kp J       &kp G       &kp K       &kp Z                                                                       &kp W       &kp X       &kp Y           &kp EQUAL   &kp BSLH    &kp BSPC
+                    &tog NUM    &lt MOUSE P                                                                                                                 &kp DOT         &kp APOSTROPHE
+                                            &kp ENTER   &kp SPACE   &kp LCTRL                               &tog FN                 &kp CAPS    &kp RCTRL
+                                            &kp LWIN    &kp LSHIFT  &kp LALT                                &kp DEL                 &kp RSHIFT  &kp RWIN
             >;
         };
 // carpalx: outputs-everythin_colemakstart //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         fn{
             bindings = <
-&kp F2  &kp F3  &kp F4      &trans      &trans      &kp F5  &bt BT_SEL 0                                    &bt BT_SEL 3  &kp F6          &trans          &trans          &kp F7          &kp F8          &kp F9
-&kp F1  &trans  &trans      &kp UP      &trans      &trans  &bt BT_SEL 1                                    &bt BT_SEL 4  &trans          &trans          &trans          &trans          &trans          &kp F10
-&trans  &trans  &kp LEFT    &kp DOWN    &kp RIGHT   &trans  &bt BT_SEL 2                                    &trans        &trans          &trans          &trans          &trans          &trans          &kp F11
-&trans  &trans  &trans      &trans      &trans      &trans                                                                &trans          &trans          &out OUT_BLE    &out OUT_USB    &trans          &kp F12
-                &trans      &trans                                                                                                                        &trans          &trans
-                                        &trans      &trans  &trans                                          &trans        &sl SYSCTRL     &trans
-                                        &trans      &trans  &trans                                          &trans        &trans          &trans
+&kp F2          &kp F3          &kp F4      &trans          &trans      &kp F5  &bt BT_SEL 0                                    &bt BT_SEL 3  &kp F6    &trans    &trans          &kp F7         &kp F8  &kp F9
+&kp F1          &trans          &trans      &kp UP          &trans      &trans  &bt BT_SEL 1                                    &bt BT_SEL 4  &trans    &trans    &trans          &trans         &trans  &kp F10
+&trans          &trans          &kp LEFT    &kp DOWN        &kp RIGHT   &trans  &bt BT_SEL 2                                    &trans        &trans    &trans    &trans          &to CAMEL_CASE &trans  &kp F11
+&sl sysctrl     &to SNAKE_CASE  &trans      &trans          &trans      &trans                                                                &trans    &trans    &out OUT_BLE    &out OUT_USB   &trans  &kp F12
+                                &trans      &to PASCAL_CASE                                                                                                       &trans          &trans
+                                                            &trans      &trans  &trans                                          &trans        &trans    &trans
+                                                            &trans      &trans  &trans                                          &trans        &trans    &trans
             >;
         };
 
@@ -806,6 +808,29 @@
                                             &trans  &trans  &trans              &trans  &trans          &trans
             >;
         };
+        
+         camel_case{
+             bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans     &trans      &trans      &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans     &trans      &trans      &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans     &trans      &trans      &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                             &trans  &trans  &trans  &trans  &trans  &trans
+                 &trans  &trans                                                     &trans  &trans
+                                 &trans  &sk LSHIFT &trans      &to DEFAULT  &trans &trans
+                                 &trans  &trans     &trans      &trans      &trans  &trans
+             >;
+         };
+         snake_case{
+             bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans         &trans          &trans      &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans         &trans          &trans      &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans         &trans          &trans      &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &trans  &trans  &trans  &trans  &trans
+                 &trans  &trans                                                                     &trans  &trans
+                                 &trans  &kp UNDERSCORE &trans          &to DEFAULT &trans  &trans
+                                 &trans  &trans         &trans          &trans      &trans  &trans
+             >;
+         };
 
 //         FN{
 //             bindings = <
