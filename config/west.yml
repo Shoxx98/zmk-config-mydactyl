@@ -2,15 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: urob
-      url-base: https://github.com/urob
+    - name: Shoxx98
+      url-base: https://github.com/Shoxx98
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
     - name: zmk-unicode
-      remote: urob
+      remote: Shoxx98
       revision: v0.3 
   self:
     path: config
