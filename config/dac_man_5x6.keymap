@@ -795,7 +795,7 @@
             bindings = <
 &trans  &trans  &trans      &trans  &trans  &trans  &trans              &trans  &trans      &trans  &trans      &trans  &trans  &trans
 &trans  &trans  &trans      &trans  &trans  &trans  &trans              &trans  &linux_ue   &trans  &linux_oe   &trans  &trans  &trans
-&trans  &trans  &uc UC_DE_SZ   &trans  &trans  &trans  &trans              &trans  &linux_ae   &trans  &trans      &trans  &trans  &trans
+&trans  &trans  &uc UC_DE_SS   &trans  &trans  &trans  &trans              &trans  &linux_ae   &trans  &trans      &trans  &trans  &trans
 &trans  &trans  &trans      &trans  &trans  &trans                              &trans      &trans  &trans      &trans  &trans  &trans
                 &trans      &trans                                                                  &trans      &trans
                                     &trans  &trans  &trans              &trans  &trans      &trans
