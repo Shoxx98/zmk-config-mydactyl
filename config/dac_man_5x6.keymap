@@ -19,9 +19,8 @@
 #define MATH        5
 #define MATH_C      6
 #define UMLAUT      7
-#define UMLAUT_C    8
-#define CAMEL_CASE  9
-#define SNAKE_CASE  10
+#define CAMEL_CASE  8
+#define SNAKE_CASE  9
 
 #define INDEX_RCTRL 63
 #define INDEX_LSHIFT 65
@@ -796,7 +795,7 @@
             bindings = <
 &trans  &trans  &trans      &trans  &trans  &trans  &trans              &trans  &trans      &trans  &trans      &trans  &trans  &trans
 &trans  &trans  &trans      &trans  &trans  &trans  &trans              &trans  &linux_ue   &trans  &linux_oe   &trans  &trans  &trans
-&trans  &trans  &linux_sz   &trans  &trans  &trans  &trans              &trans  &linux_ae   &trans  &trans      &trans  &trans  &trans
+&trans  &trans  &uc UC_DE_SZ   &trans  &trans  &trans  &trans              &trans  &linux_ae   &trans  &trans      &trans  &trans  &trans
 &trans  &trans  &trans      &trans  &trans  &trans                              &trans      &trans  &trans      &trans  &trans  &trans
                 &trans      &trans                                                                  &trans      &trans
                                     &trans  &trans  &trans              &trans  &trans      &trans
@@ -804,18 +803,6 @@
             >;
         };
 
-        umlaut_c{
-            bindings = <
-&trans  &trans  &trans              &trans  &trans  &trans  &trans              &trans  &trans          &trans  &trans          &trans  &trans  &trans
-&trans  &trans  &trans              &trans  &trans  &trans  &trans              &trans  &linux_UE_shift &trans  &linux_OE_shift &trans  &trans  &trans
-&trans  &trans  &linux_SZ_shift     &trans  &trans  &trans  &trans              &trans  &linux_AE_shift &trans  &trans          &trans  &trans  &trans
-&trans  &trans  &trans              &trans  &trans  &trans                              &trans          &trans  &trans          &trans  &trans  &trans
-                &trans              &trans                                                                      &trans          &trans
-                                            &trans  &trans  &trans              &trans  &trans          &trans
-                                            &trans  &trans  &trans              &trans  &trans          &trans
-            >;
-        };
-        
          camel_case{
              bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans     &trans      &trans      &trans  &trans  &trans  &trans  &trans  &trans
