@@ -667,10 +667,6 @@
         };
     };
     
-    &uc {
-        default-mode = <UC_MODE_LINUX>;
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
