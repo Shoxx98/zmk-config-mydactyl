@@ -83,396 +83,6 @@
 
 / {
 
-    macros{
-
-        ZMK_MACRO(linux_unicode_enter,
-        bindings =  <&macro_press &kp LCTRL &kp LSHIFT &kp U>,
-                    <&macro_release &kp LCTRL &kp LSHIFT &kp U>;
-        )
-
-        ZMK_MACRO(alpha_s,
-            bindings = <&kp N3 &kp B &kp N1 &kp ENTER >;
-        )
-
-        ZMK_MACRO(beta_s,
-            bindings = <&kp N3 &kp B &kp N2 &kp ENTER >;
-        )
-
-        ZMK_MACRO(gamma_s,
-            bindings = <&kp N3 &kp B &kp N3 &kp ENTER >;
-        )
-
-        ZMK_MACRO(delta_c,
-            bindings = <&kp N3 &kp N9 &kp N4 &kp ENTER >;
-        )
-
-        ZMK_MACRO(epsilon_s,
-            bindings = <&kp N3 &kp B &kp N5 &kp ENTER >;
-        )
-
-        ZMK_MACRO(element_of,
-            bindings = <&kp N2 &kp N2 &kp N0 &kp N8 &kp ENTER >;
-        )
-
-        ZMK_MACRO(not_element_of,
-            bindings = <&kp N2 &kp N2 &kp N0 &kp N9 &kp ENTER >;
-        )
-
-        ZMK_MACRO(there_exists,
-            bindings = <&kp N2 &kp N2 &kp N0 &kp N3 &kp ENTER >;
-        )
-
-        ZMK_MACRO(there_n_exists,
-            bindings = <&kp N2 &kp N2 &kp N0 &kp N4 &kp ENTER >;
-        )
-
-        ZMK_MACRO(theta_s,
-            bindings = <&kp N3 &kp B &kp N8 &kp ENTER >;
-        )
-
-        ZMK_MACRO(kappa_s,
-            bindings = <&kp N3 &kp B &kp A &kp ENTER >;
-        )
-
-        ZMK_MACRO(lambda_c,
-            bindings = <&kp N3 &kp N9 &kp B &kp ENTER >;
-        )
-
-        ZMK_MACRO(lambda_s,
-            bindings = <&kp N3 &kp B &kp B &kp ENTER >;
-        )
-
-        ZMK_MACRO(mu_s,
-            bindings = <&kp N3 &kp B &kp C &kp ENTER >;
-        )
-
-        ZMK_MACRO(nu_s,
-            bindings = <&kp N3 &kp B &kp D &kp ENTER >;
-        )
-
-        ZMK_MACRO(pi_s,
-            bindings = <&kp N3 &kp C &kp N0 &kp ENTER >;
-        )
-
-        ZMK_MACRO(rho_s,
-            bindings = <&kp N3 &kp C &kp N1 &kp ENTER >;
-        )
-
-        ZMK_MACRO(sigma_s,
-            bindings = <&kp N3 &kp C &kp N3 &kp ENTER >;
-        )
-
-        ZMK_MACRO(sigma_c,
-            bindings = <&kp N3 &kp A &kp N3 &kp ENTER >;
-        )
-
-        ZMK_MACRO(tau_s,
-            bindings = <&kp N3 &kp C &kp N4 &kp ENTER >;
-        )
-
-        ZMK_MACRO(phi_s,
-            bindings = <&kp N3 &kp C &kp N6 &kp ENTER >;
-        )
-
-        ZMK_MACRO(phi_c,
-            bindings = <&kp N3 &kp A &kp N6 &kp ENTER >;
-        )
-
-        ZMK_MACRO(psi_s,
-            bindings = <&kp N3 &kp C &kp N8 &kp ENTER >;
-        )
-
-        ZMK_MACRO(omega_s,
-            bindings = <&kp N3 &kp C &kp N9 &kp ENTER >;
-        )
-
-        ZMK_MACRO(omega_c,
-            bindings = <&kp N3 &kp N8 &kp F &kp ENTER >;
-        )
-
-        ZMK_MACRO(logic_and,
-            bindings = <&kp N2 &kp N2 &kp N2 &kp N7 &kp ENTER >;
-        )
-
-        ZMK_MACRO(logic_or,
-            bindings = <&kp N2 &kp N2 &kp N2 &kp N8 &kp ENTER >;
-        )
-
-        ZMK_MACRO(math_brack_l,
-            bindings = <&kp N2 &kp N7 &kp E &kp N6 &kp ENTER >;
-        )
-
-        ZMK_MACRO(math_brack_r,
-            bindings = <&kp N2 &kp N7 &kp E &kp N7 &kp ENTER >;
-        )
-
-        ZMK_MACRO(for_all,
-            bindings = <&kp N2 &kp N2 &kp N0 &kp N0 &kp ENTER >;
-        )
-        ZMK_MACRO(linux_for_all,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-            <&for_all>;
-         )
-
-        ZMK_MACRO(unicode_ue,
-            bindings = <&kp F &kp C &kp ENTER>;
-        )
-        ZMK_MACRO(unicode_ae,
-            bindings = <&kp E &kp N4 &kp ENTER>;
-        )
-        ZMK_MACRO(unicode_oe,
-            bindings = <&kp F &kp N6 &kp ENTER>;
-        )
-
-        ZMK_MACRO(unicode_UE_shift,
-            bindings = <&kp D &kp C &kp ENTER>;
-        )
-        ZMK_MACRO(unicode_AE_shift,
-            bindings = <&kp C &kp N4 &kp ENTER>;
-        )
-        ZMK_MACRO(unicode_OE_shift,
-            bindings = <&kp D &kp N6 &kp ENTER>;
-        )
-
-        ZMK_MACRO(unicode_sz,
-            bindings = <&kp D &kp F &kp ENTER>;
-        )
-        ZMK_MACRO(linux_sz,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&unicode_sz>;
-        )
-
-        ZMK_MACRO(unicode_SZ_shift,
-            bindings = <&kp N1 &kp E &kp N9 &kp E &kp ENTER>;
-        )
-        ZMK_MACRO(linux_SZ_shift,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&unicode_SZ_shift>;
-        )
-
-        ZMK_MACRO(linux_ue,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&unicode_ue>;
-        )
-        ZMK_MACRO(linux_ae,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings =  <&linux_unicode_enter >,
-                        <&unicode_ae>;
-        )
-        ZMK_MACRO(linux_oe,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&unicode_oe>;
-        )
-
-        ZMK_MACRO(linux_UE_shift,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&unicode_UE_shift>;
-        )
-        ZMK_MACRO(linux_AE_shift,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings =  <&linux_unicode_enter >,
-                        <&unicode_AE_shift>;
-        )
-        ZMK_MACRO(linux_OE_shift,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&unicode_OE_shift>;
-        )
-
-        ZMK_MACRO(linux_alpha_s,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&alpha_s>;
-        )
-        ZMK_MACRO(linux_beta_s,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&beta_s>;
-        )
-        ZMK_MACRO(linux_gamma_s,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&gamma_s>;
-        )
-        ZMK_MACRO(linux_delta_c,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&delta_c>;
-        )
-        ZMK_MACRO(linux_epsilon_s,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&epsilon_s>;
-        )
-        ZMK_MACRO(linux_element_of,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&element_of>;
-        )
-        ZMK_MACRO(linux_not_element_of,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&not_element_of>;
-        )
-        ZMK_MACRO(linux_there_exists,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&there_exists>;
-        )
-        ZMK_MACRO(linux_there_n_exists,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&there_n_exists>;
-        )
-        ZMK_MACRO(linux_theta_s,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&theta_s>;
-        )
-        ZMK_MACRO(linux_kappa_s,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&kappa_s>;
-        )
-        ZMK_MACRO(linux_lambda_s,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&lambda_s>;
-        )
-        ZMK_MACRO(linux_lambda_c,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&linux_lambda_c>;
-        )
-
-        ZMK_MACRO(linux_mu_s,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&mu_s>;
-        )
-        ZMK_MACRO(linux_nu_s,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&nu_s>;
-        )
-        ZMK_MACRO(linux_pi_s,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&pi_s>;
-        )
-        ZMK_MACRO(linux_rho_s,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&rho_s>;
-        )
-        ZMK_MACRO(linux_sigma_s,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&sigma_s>;
-        )
-        ZMK_MACRO(linux_sigma_c,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&sigma_c>;
-        )
-        ZMK_MACRO(linux_tau_s,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&tau_s>;
-        )
-        ZMK_MACRO(linux_phi_s,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&phi_s>;
-        )
-        ZMK_MACRO(linux_phi_c,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&phi_c>;
-        )
-        ZMK_MACRO(linux_psi_s,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&psi_s>;
-        )
-        ZMK_MACRO(linux_omega_s,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&omega_s>;
-        )
-        ZMK_MACRO(linux_omega_c,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&omega_c>;
-        )
-        ZMK_MACRO(linux_logic_and,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&logic_and>;
-        )
-        ZMK_MACRO(linux_logic_or,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&logic_or>;
-        )
-        ZMK_MACRO(linux_math_brack_l,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&math_brack_l>;
-        )
-        ZMK_MACRO(linux_math_brack_r,
-            wait-ms = <WAIT_MS>;
-            tap-ms = <TAP_MS>;
-            bindings = <&linux_unicode_enter >,
-                       <&math_brack_r>;
-        )
-
-
-    };
-
     behaviors {
         lt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -580,40 +190,37 @@
 
         math{
             bindings = <
-&trans  &trans              &trans          &trans          &trans          &trans          &trans                  &trans  &trans              &trans                  &trans                  &trans          &trans              &trans
-&trans  &linux_math_brack_l &linux_pi_s     &trans          &linux_lambda_s &linux_mu_s     &trans                  &trans  &linux_logic_or     &linux_beta_s           &linux_element_of       &linux_phi_s    &linux_math_brack_r &trans
-&trans  &trans              &linux_sigma_s  &linux_tau_s    &linux_rho_s    &linux_nu_s     &trans                  &trans  &linux_alpha_s      &trans                  &linux_epsilon_s        &linux_gamma_s  &trans              &linux_theta_s
-&trans  &trans              &trans          &trans          &linux_kappa_s  &linux_omega_s                                  &trans              &linux_there_exists     &linux_psi_s            &trans          &trans              &trans
-                            &trans          &trans                                                                                                                      &trans                  &trans
-                                                            &trans          &trans          &trans                  &trans  &trans              &trans
-                                                            &trans          &lt MATH_C      &trans                  &trans  &trans              &trans
+&trans  &trans          &trans          &trans          &trans          &trans          &trans                  &trans  &trans          &trans          &trans          &trans          &trans          &trans
+&trans  &uc 0x27E6 0    &uc 0x03C0 0    &trans          &uc 0x03BB 0    &uc 0x03BC 0    &trans                  &trans  &uc 0x2228 0    &uc 0x03B2 0    &uc 0x2208 0    &uc 0x03C6 0    &uc 0x27E7 0    &trans
+&trans  &trans          &uc 0x03C3 0    &uc 0x03C4 0    &uc 0x03C1 0    &uc 0x03BD 0    &trans                  &trans  &uc 0x03B1 0    &trans          &uc 0x03B5 0    &uc 0x03B3 0    &trans          &uc 0x03B8 0
+&trans  &trans          &trans          &trans          &uc 0x03BA 0    &uc 0x03C9 0                                    &trans          &uc 0x2203 0    &uc 0x03C8 0    &trans          &trans          &trans
+                        &trans          &trans                                                                                                          &trans          &trans
+                                                        &trans          &trans          &trans                  &trans  &trans          &trans
+                                                        &trans          &lt MATH_C      &trans                  &trans  &trans          &trans
             >;
         };
-
-
 
         math_c{
             bindings = <
-&trans  &trans              &trans          &trans          &trans          &trans          &trans                  &trans  &trans              &trans                  &trans                  &trans          &trans              &trans
-&trans  &trans              &trans          &trans          &linux_lambda_c &trans          &trans                  &trans  &linux_logic_and    &trans                  &linux_not_element_of   &linux_phi_c    &trans              &trans
-&trans  &linux_delta_c      &linux_sigma_c  &trans          &trans          &trans          &trans                  &trans  &linux_for_all      &trans                  &trans                  &trans          &trans              &trans
-&trans  &trans              &trans          &trans          &trans          &linux_omega_c                                  &trans              &linux_there_n_exists   &trans                  &trans          &trans              &trans
-                            &trans          &trans                                                                                                                  &trans                  &trans
+&trans  &trans              &trans          &trans          &trans          &trans          &trans                  &trans  &trans              &trans          &trans          &trans          &trans  &trans
+&trans  &trans              &trans          &trans          &uc 0x039B 0    &trans          &trans                  &trans  &uc 0x2227 0        &trans          &uc 0x2209 0    &uc 0x03A6 0    &trans  &trans
+&trans  &uc 0x0394 0        &uc 0x03A3 0    &trans          &trans          &trans          &trans                  &trans  &uc 0x2200 0        &trans          &trans          &trans          &trans  &trans
+&trans  &trans              &trans          &trans          &trans          &uc 0x038F 0                                    &trans              &uc 0x2204 0    &trans          &trans          &trans  &trans
+                            &trans          &trans                                                                                                              &trans          &trans
                                                             &trans          &trans          &trans                  &trans  &trans              &trans
-                                                            &trans          &lt MATH_C      &trans                  &trans  &trans              &trans
+                                                            &trans          &mo MATH_C      &trans                  &trans  &mo MATH_C          &trans
             >;
         };
 
-
         umlaut{
             bindings = <
-&trans  &trans  &trans      &trans  &trans  &trans  &trans              &trans  &trans      &trans  &trans      &trans  &trans  &trans
-&trans  &trans  &trans      &trans  &trans  &trans  &trans              &trans  &uc UC_DE_UE   &trans  &uc UC_DE_OE   &trans  &trans  &trans
-&trans  &trans  &uc UC_DE_SS   &trans  &trans  &trans  &trans              &trans  &uc UC_DE_AE   &trans  &trans      &trans  &trans  &trans
-&trans  &trans  &trans      &trans  &trans  &trans                              &trans      &trans  &trans      &trans  &trans  &trans
-                &trans      &trans                                                                  &trans      &trans
-                                    &trans  &trans  &trans              &trans  &trans      &trans
-                                    &trans  &trans  &trans              &trans  &trans      &trans
+&trans  &trans  &trans          &trans  &trans  &trans  &trans              &trans  &trans          &trans  &trans          &trans  &trans  &trans
+&trans  &trans  &trans          &trans  &trans  &trans  &trans              &trans  &uc UC_DE_UE    &trans  &uc UC_DE_OE    &trans  &trans  &trans
+&trans  &trans  &uc UC_DE_SS    &trans  &trans  &trans  &trans              &trans  &uc UC_DE_AE    &trans  &trans          &trans  &trans  &trans
+&trans  &trans  &trans          &trans  &trans  &trans                              &trans          &trans  &trans          &trans  &trans  &trans
+                &trans          &trans                                                                      &trans          &trans
+                                        &trans  &trans  &trans              &trans  &trans          &trans
+                                        &trans  &trans  &trans              &trans  &trans          &trans
             >;
         };
 
@@ -628,6 +235,7 @@
                                  &trans  &trans     &trans      &trans      &trans  &trans
              >;
          };
+
          snake_case{
              bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans         &trans          &trans      &trans  &trans  &trans  &trans  &trans  &trans
