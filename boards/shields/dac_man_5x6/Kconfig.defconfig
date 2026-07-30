@@ -23,7 +23,7 @@ endif
 
 config ZMK_UNICODE_TAP_MS
     int "Time to wait (in milliseconds) between the press and release of each key in the unicode sequence."
-    default 10
+    default 0
 
 
 config ZMK_UNICODE_WAIT_MS
