@@ -79,8 +79,6 @@
 
 &uc {
     default-mode = <UC_MODE_LINUX>;
-    ZMK_UNICODE_TAP_MS=10;
-    ZMK_UNICODE_WAIT_MS=10;
 };
 
 / {
