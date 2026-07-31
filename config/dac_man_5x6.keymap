@@ -79,7 +79,7 @@
 
 &uc {
     default-mode = <UC_MODE_WIN_COMPOSE>;
-    win-compose-key = <LC(LS(U))>;
+    win-compose-key = <LC(LS())>;
 };
 
 / {
